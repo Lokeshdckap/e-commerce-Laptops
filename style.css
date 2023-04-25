@@ -1,0 +1,120 @@
+body {
+    background-image: url("images-signup/PhotoFix_1681748619011_1\ \(1\).svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 751px;
+}
+.container{
+    background-color: rgba(28,26,38,0.28);
+    width: 460px;
+    height: 515px;
+    border-radius: 20px;
+    margin-left: 75px;
+    display: flex;
+    justify-content: center;
+    margin-top: 63px;
+}
+
+
+
+img {
+    margin-left: 70px;
+    margin-top: 15px;
+}
+h3{
+    font-weight: 500px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.formGrp{
+    color: #494848;
+    margin-bottom: 5px;
+    position: relative;
+}
+input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color: #1C1A26;
+}
+form{
+    margin-left: 29px;
+}
+.formGrp>input{
+    
+    border-radius: 10px;
+    height: 38px;
+    width: 276px;
+    background: rgba(255, 255, 255, 0.76);
+    /* border: none; */
+    outline: none;
+    border: 1px solid rgb(148, 145, 145);
+    
+}
+.formGrp>p{
+    font-size: 15px;
+    margin-top: 5px;
+    visibility: hidden;
+    /* position: relative;
+    bottom: 70px; */
+
+}
+h4{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 35px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 48px;
+    width: 299px;
+}
+h2{
+    color: #FFFFFF;
+    position: relative;
+    right: 20px;
+    top: 10px;
+}
+h2>a{
+    color: #f39a35;
+    text-decoration: none;
+}
+button{
+    width: 276px;
+    height: 38px;
+    border: none;
+    background-color: #f39a35;
+    color: #1c1a26;
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+.formGrp.required p{
+   
+    color: rgb(141, 24, 24);
+    visibility: visible;
+    font-weight: bold;
+}
+.formGrp.required input{
+   border-color: red;
+}
+.formGrp.success input{
+    border-color: green;
+ }
+ .fa-eye-slash{
+    position: absolute;
+    left: 77%;
+    top: 10px;
+    cursor: pointer;
+
+}
+.fa-eye{
+    position: absolute;
+    left: 77%;
+    top: 10px;
+    cursor: pointer; 
+}
