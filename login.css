@@ -1,0 +1,71 @@
+body {
+    background-image: url("image-login/PhotoFix_1681748619011_1\ \(1\).svg");
+}
+
+img {
+    margin-left: 70px;
+                margin-top: 15px;
+}
+
+.loginbox {
+    width: 460px;
+    height: 515px;
+    margin-left: 75px;
+    background: rgba(28, 26, 38, 0.28);
+    border-radius: 20px;
+    margin-top: 63px;
+    /* padding: 46px 52px; */
+}
+
+.content p {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 46px;
+}
+
+.inputs>form {
+    padding: 54px 91px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+form>input {
+    border-radius: 10px;
+    height: 38px;
+    width: 276px;
+    background: rgba(255, 255, 255, 0.76);
+    border: none;
+}
+
+form>input[type='submit'] {
+    background: #F39A35;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: #1C1A26;
+}
+
+input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color: #1C1A26;
+}
+
+.bottomText h2 {
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    
+}
+
+.bottomText a {
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration: none;
+    color: #FE9A35;
+}
