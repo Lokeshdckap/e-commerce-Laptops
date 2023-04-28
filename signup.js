@@ -11,7 +11,7 @@ passwordHide.addEventListener("click", () => {
         passInp = passwordHide.parentElement.previousElementSibling
         passInp.setAttribute('type', 'text')
     }
-    else{
+    else {
         passwordHide.className = 'fa-regular fa-eye-slash'
         passInp.setAttribute('type', 'password')
     }
@@ -35,15 +35,35 @@ form.addEventListener("submit", (e) => {
                 checkPassword(password)
                 checkEmail(email)
             }
-            else {
-                element.addEventListener("keyup", () => {
-                    success(element)
-                })
-            }
         })
     }
     check([username, email, password])
 })
+
+
+function box(inpu) {
+    inpu.forEach(element => {
+        element.addEventListener("keyup", (e) => {
+            if (e.target.value === "") {
+                errors(element, `* ${getValues(element)} is Required`)
+            }
+            else if (e.target === email) {
+                success(email)
+                checkEmail(email)
+            }
+            else if (e.target === password) {
+                success(password)
+                checkPassword(password)
+                // checkLength([password], 6, 30)
+            }
+            else if (e.target === username) {
+                success(username)
+                checkLength([username], 6, 30)
+            }
+        })
+    })
+}
+box([username, email, password])
 
 
 function checkLength(inputs, min, max) {
@@ -64,11 +84,13 @@ function checkPassword(input) {
     if (!input.value.trim().isPassword()) {
         errors(input, '* Password Must be symbols & Special Characters')
     }
+
 }
+
 
 function checkEmail(input) {
     if (!input.value.trim().isEmail()) {
-        errors(input, '* This is not an valid email address')
+        errors(input, '*email Required & Not a valid email')
     }
 }
 
@@ -109,4 +131,8 @@ function getValues(input) {
     // return input.id
     return input.getAttribute("data-name")
 }
+
+// function Fetch(){
+//     console.log('lok')
+// }
 

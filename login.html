@@ -17,17 +17,28 @@
                 We've saved you a seat."</p>
         </div>
         <div class="inputs">
-            <form>
-                <input type="text" placeholder="     Email">
-                <input type="text" placeholder="     Password">
-                <input type="submit" value="Submit">
+            <form id="form">
+                <div class="formGrp">
+                    <input type="text" class="Email" id="Email" placeholder="Email" data-name="Email">
+                    <p>Required</p>
+                </div>
+                <div class="formGrp">
+                    <input type="text" class="PassWord" id="PassWord" placeholder="Password" data-name="Password">
+                    <span>
+                        <i class="fa-regular fa-eye-slash"></i>
+                    </span>
+                    <p>Required</p>
+        
+                </div>
+                <button type="submit" value="Submit">Login</button>
             </form>
+        
             <div class="bottomText">
-                <h2>"Be a part of our family!"<a href="#">SignUp</a></h2>
+                <h2>"Be a part of our family!"<a href="index.html">SignUp</a></h2>
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="login.js"></script>
 </body>
 
 </html>

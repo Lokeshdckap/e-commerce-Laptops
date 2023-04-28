@@ -33,20 +33,27 @@ img {
     gap: 35px;
 }
 
-form>input {
+.formGrp>input {  
     border-radius: 10px;
     height: 38px;
     width: 276px;
     background: rgba(255, 255, 255, 0.76);
-    border: none;
+    outline: none;
+    border: 1px solid rgb(148, 145, 145);
 }
 
-form>input[type='submit'] {
+button{
     background: #F39A35;
     font-weight: 400;
     font-size: 18px;
     line-height: 29px;
     color: #1C1A26;
+    width: 277px;
+    height: 38px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
 }
 
 input::placeholder {
@@ -69,3 +76,20 @@ input::placeholder {
     text-decoration: none;
     color: #FE9A35;
 }
+.formGrp>p{
+    font-size: 15px;
+    margin-top: 5px;
+    visibility: hidden;
+}
+.formGrp.required p{
+   
+    color: #f39a35;
+    visibility: visible;
+    font-weight: bold;
+}
+.formGrp.required input{
+   border-color: rgb(97, 11, 11);
+}
+.formGrp.success input{
+    border-color: rgb(15, 201, 15);
+ }

@@ -95,7 +95,7 @@ button{
 
 .formGrp.required p{
    
-    color: rgb(141, 24, 24);
+    color: #f39a35;
     visibility: visible;
     font-weight: bold;
 }
